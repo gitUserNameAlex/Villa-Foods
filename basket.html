@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./images/favicon.ico" type="images/x-icon">
+    <title>Basket</title>
+</head>
+<body>
+    <div class="basket-page">
+        <section class="dark">
+            <div class="basket-container">
+                <div class="basket-contents">
+                  <p class="basket-btn"><a href="index.html">Back to menu</a></p>
+                </div>
+              </div>
+            <h1 class="basket-footer__tittle">Villa Foods</h1> 
+            <h1 class="basket-footer__rights">All Rights Reserved @2020</h1>
+        </section>
+        <section class="light">
+            
+            <div class="empty-info">
+            <a class="empty-info-link" href="index.html">
+                <h1>Ваша корзина пуста</h1>
+                <h2>Выберите товар в списке меню</h2>
+            </a>
+            </div>
+        </section>
+    
+        <div class="basket-order">
+            
+            <dialog class="basket-dialog">
+                <h1 class="b-order-tittle">Оформление заказа</h1>
+                <input name="mail" id="b-mail" class="b-order-input" type="text" value="" placeholder="Электронная почта:">
+                <input name="name" id="b-name" class="b-order-input" type="text" value="" placeholder="Имя:">
+                <input name="surname" id="b-surname" class="b-order-input" type="text" value="" placeholder="Фамилия:">
+                <input name="city" id="b-city" class="b-order-input" type="text" value="" placeholder="Город:">
+                <input name="street" id="b-street" class="b-order-input" type="text" value="" placeholder="Улица:">
+                <input name="house" id="b-house" class="b-order-input" type="text" value="" placeholder="Дом:">
+                <input name="flat" id="b-flat" class="b-order-input" type="text" value="" placeholder="Квартира:*">
+
+            <div class="order-finishing">
+                <input class = "send-info" type="submit" value="Заказать" onclick="SendCustomerInfo()">
+            
+                <button class = "basket-dialog-close" id="basket-close">Закрыть</button>
+            </div>
+            
+            </dialog>
+
+            <button id="basket-show" class="b-order-btn">Заказать</button>
+        </div>
+
+    </div>
+    <script src="basket.js"></script>
+</body>
+</html>

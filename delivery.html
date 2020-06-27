@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./images/favicon.ico" type="images/x-icon">
+    <title>Delivery</title>
+</head>
+<body>
+
+    <div class="menu">
+        <div class="inner-center">
+
+            <img class="logo" src="images/logo.png"/>
+
+            <div class="nav">
+                <a href="index.html" class="nav-button">Menu</a>
+                <a href="about.html" class="nav-button">About us</a>
+                <a href="delivery.html" class="p-active nav-button">Delivery</a>
+                <a href="feedback.html" class="nav-button">Feedback</a>
+                <a href="basket.html" class="nav-button basket">Basket</a>
+            </div>
+
+            <div class="social-media">
+                <a class="link" href="https://vk.com/villafoods" target="_blank">
+                    <img src="./images/vk1.png" alt="">
+                </a>
+                <a class="link" href="https://www.instagram.com/4chan_tv/?hl=ru" target="_blank">
+                    <img src="./images/insta.png" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+  <div class = "delivery-page">
+    <form class = "reg_form">
+      <div class = "first__row">
+    <p class  = "delivery-paragraph">Введите ваш адрес</p>
+    <img class="map-icon" src="./images/map.png" alt="">
+</div>
+
+    <div class = "second__row"><input id="city-search-input" type = "text" class = "address" value="Страна, город, улица, дом">
+    <button type = "submit" class = "submit__button" onclick="SendAddress()">Submit</div>
+    </form>
+  </div>
+
+  <footer class="footer">
+    <div class="f-block">
+        <div class="rules">Копроративная этика</div>
+        <div class="news"><a class = "footer-links" href="https://vk.com/villafoods">Новости и пресс-релизы</a></div>
+        <div class="guest-info"><a class = "footer-links" href="about.html">Информация для гостей</a></div>
+
+        <dialog class = "request-dialog" id="phonedialog">
+            <p class="request-dialog-header">Обратная связь</p>
+
+            <p class="dialog-phone-num">
+            <br>Введите ваш номер телефона:</br>
+            <input class = "request-phone-field" type="text" id="phone-input">
+            </p>
+
+            <p>
+            <br class="send-request">
+            <input  class = "send-phone" type="submit" value="Оставить заявку на обратный звонок" onclick="SendPhone()">
+            </p>
+            <button class = "request-dialog-close" id="close">Закрыть</button>
+        </dialog>
+
+        <button id = "show" class="footer-feedback">Обратная связь</button>
+        <h1 class="footer__tittle">Villa Foods</h1>
+        <h1 class="footer__rights">All Rights Reserved @2020</h1>
+    </div>
+        <div class="right-footer-block">
+        <a class="footer__politics" href="https://www.freshdoc.ru/zashita_personalnyh_dannyh/politika_v_otnoshenii_obrabotki/" target="_blank">
+            Политика обработки персональных данных
+        </a>
+            <iframe class="map"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1166.9842016440605!2d37.635877164005485!3d54.19834352071425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x41343ff4558be9cf%3A0xfc643f11bdc95a8d!2z0JrQvtC80L_RjNGO0YLQtdGA0L3QsNGPINCw0LrQsNC00LXQvNC40Y8g0KDRg9Cx0LjQutC-0L0g0KLRg9C70LAgKFJ1Ymljb25lKQ!5e0!3m2!1sru!2sru!4v1584552905975!5m2!1sru!2sru"
+                width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                tabindex="0"></iframe>
+            </div>
+    </footer>
+    <script src="delivery.js"></script>
+</body>
+</html>

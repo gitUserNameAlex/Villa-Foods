@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./images/favicon.ico" type="images/x-icon">
+    <title>Villa Foods</title>
+</head>
+
+<body>
+    <div class="menu">
+        <div class="inner-center">
+
+            <img class="logo" src="images/logo.png"/>
+
+            <div class="nav">
+                <a href="index.html" class="p-active nav-button">Menu</a>
+                <a href="about.html" class="nav-button">About us</a>
+                <a href="delivery.html" class="nav-button">Delivery</a>
+                <a href="feedback.html" class="nav-button">Feedback</a>
+                <a href="basket.html" class="nav-button basket">Basket</a>
+            </div>
+
+            <div class="social-media">
+                <a class="link" href="https://vk.com/villafoods" target="_blank">
+                    <img src="./images/vk1.png" alt="">
+                </a>
+                <a class="link" href="https://www.instagram.com/4chan_tv/?hl=ru" target="_blank">
+                    <img src="./images/insta.png" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="slideshow-container">
+        <!-----Slide 1--->
+        <div class="mySlides fade">
+            <img class="slider-image" src="./images/firstsw.jpg" alt="">
+            <div class="slide-text">Enjoy</div>
+        </div>
+
+        <!-----Slide 2--->
+        <div class="mySlides fade">
+            <img class="slider-image" src="./images/secondsw.jpg" alt="">
+            <div class="slide-text">Villa Food`s</div>
+        </div>
+
+        <!----Slide 3--->
+        <div class="mySlides fade">
+            <img class="slider-image" src="./images/thirdsw.jpg" alt="">
+            <div class="slide-text">Best meals every day</div>
+        </div>
+
+        <!-----Slide 4--->
+        <div class="mySlides fade">
+            <img class="slider-image" src="./images/fourthsw.jpg" alt="">
+            <div class="slide-text">Delicious</div>
+        </div>
+
+        <!-----Slide 5--->
+        <div class="mySlides fade">
+            <img class="slider-image" src="./images/fifthsw.jpg" alt="">
+            <div class="slide-text">Fresh</div>
+        </div>
+
+        <!---Navigation Buttons---->
+        <a class="prev" onclick="plusSlides(-1)">&#10094</a>
+        <a class="next" onclick="plusSlides(1)">&#10095</a>
+    </div>
+
+    <div class="slider-navigation">
+        <br>
+        <div style="text-align: center;">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+        </div>
+    </div>
+
+
+    <div class="food-list">
+        <div class="section-tittles">
+            <h1 class="my-tittle mt-1">Dishes</h1>
+            <h1 class="my-tittle">Beverages</h1>
+            <h1 class="my-tittle">Snacks</h1>
+        </div>
+
+        <div class="food-row-new">
+            <div class="item">
+                <img class="item-image" src="./images/firstdish.png" alt="">
+                <h1 class="item-tittle">Pepperoni Pizza</h1>
+                <span class="price">499р</span>
+                <button class="order" data-id="11" data-price="499" data-title="Pepperoni Pizza" data-image="./images/firstdish.png" onclick="AddToBasket(this);">Order</button>
+            </div>
+            <div class="item">
+                <img class="item-image" src="./images/firstbev.png" alt="">
+                <h1 class="item-tittle">Coca-Cola 0,5L</h1>
+                <span class="price">49р</span>
+                <button class="order" data-id="12" data-price="49" data-title="Coca-Cola 0,5L" data-image="./images/firstbev.png" onclick="AddToBasket(this);">Order</button>
+            </div>
+            <div class="item">
+                <img class="item-image" src="./images/firstsnack.png" alt="">
+                <h1 class="item-tittle">Greek Salad</h1>
+                <span class="price">149р</span>
+                <button class="order" data-id="13" data-price="149" data-title="Greek Salad" data-image="./images/firstsnack.png" onclick="AddToBasket(this);">Order</button>
+            </div>
+        </div>
+
+        <div class="food-row-new">
+            <div class="item">
+                <img class="item-image" src="./images/seconddish.png" alt="">
+                <h1 class="item-tittle">Grilled Octopus</h1>
+                <span class="price">399р</span>
+                <button class="order" data-id="21" data-price="399" data-title="Grilled Octupus" data-image="./images/seconddish.png" onclick="AddToBasket(this);">Order</button>
+            </div>
+            <div class="item">
+                <img class="item-image" src="./images/secondbev.png" alt="">
+                <h1 class="item-tittle">Fanta 0,5L</h1>
+                <span class="price">49р</span>
+                <button class="order" data-id="22" data-price="49" data-title="Fanta 0,5L" data-image="./images/secondbev.png" onclick="AddToBasket(this);">Order</button>
+            </div>
+            <div class="item">
+                <img class="item-image" src="./images/secondsnack.png" alt="">
+                <h1 class="item-tittle">Pineapple</h1>
+                <span class="price">69р</span>
+                <button class="order" data-id="23" data-price="69" data-title="Pineapple" data-image="./images/secondsnack.png" onclick="AddToBasket(this);">Order</button>
+            </div>
+        </div>
+
+        <div class="food-row-new">
+            <div class="item">
+                <img class="item-image" src="./images/thirddish.png" alt="">
+                <h1 class="item-tittle">Chicken Soup</h1>
+                <span class="price">179р</span>
+                <button class="order" data-id="31" data-price="179" data-title="Chicken Soup" data-image="./images/thirddish.png" onclick="AddToBasket(this);">Order</button>
+            </div>
+            <div class="item">
+                <img class="item-image" src="./images/thirdbev.jpg" alt="">
+                <h1 class="item-tittle">Tea</h1>
+                <span class="price">59р</span>
+                <button class="order" data-id="32" data-price="59" data-title="Tea" data-image="./images/thirdbev.jpg" onclick="AddToBasket(this);">Order</button>
+            </div>
+            <div class="item">
+                <img class="item-image" src="./images/thirdsnack.jpg" alt="">
+                <h1 class="item-tittle">Potato Chips</h1>
+                <span class="price">99р</span>
+                <button class="order" data-id="33" data-price="99" data-title="Potato Chips" data-image="./images/thirdsnack.jpg" onclick="AddToBasket(this);">Order</button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+    <div class="f-block">
+        <div class="rules">Копроративная этика</div>
+        <div class="news"><a class = "footer-links" href="https://vk.com/villafoods">Новости и пресс-релизы</a></div>
+        <div class="guest-info"><a class = "footer-links" href="about.html">Информация для гостей</a></div>
+
+        <dialog class = "request-dialog" id="phonedialog">
+            <p class="request-dialog-header">Обратная связь</p>
+
+            <p class="dialog-phone-num">
+            <br>Введите ваш номер телефона:</br>
+            <input class = "request-phone-field" type="text" id="phone-input">
+            </p>
+
+            <p>
+            <br class="send-request">
+            <input  class = "send-phone" type="submit" value="Оставить заявку на обратный звонок" onclick="SendPhone()">
+            </p>
+            <button class = "request-dialog-close" id="close">Закрыть</button>
+        </dialog>
+
+        <button id = "show" class="footer-feedback">Обратная связь</button>
+        <h1 class="footer__tittle">Villa Foods</h1>
+        <h1 class="footer__rights">All Rights Reserved @2020</h1>
+    </div>
+        <div class="right-footer-block">
+        <a class="footer__politics" href="https://www.freshdoc.ru/zashita_personalnyh_dannyh/politika_v_otnoshenii_obrabotki/" target="_blank">
+            Политика обработки персональных данных
+        </a>
+            <iframe class="map"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1166.9842016440605!2d37.635877164005485!3d54.19834352071425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x41343ff4558be9cf%3A0xfc643f11bdc95a8d!2z0JrQvtC80L_RjNGO0YLQtdGA0L3QsNGPINCw0LrQsNC00LXQvNC40Y8g0KDRg9Cx0LjQutC-0L0g0KLRg9C70LAgKFJ1Ymljb25lKQ!5e0!3m2!1sru!2sru!4v1584552905975!5m2!1sru!2sru"
+                width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                tabindex="0"></iframe>
+            </div>
+
+            <a class="back_to_top" title="Наверх">
+                <h1 class="up">UP</h1>
+            </a>
+    </footer> 
+    <script src="index.js"></script>
+</body>
+</html>
